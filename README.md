@@ -1,9 +1,7 @@
-<!DOCTYPE html>
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>QA Grid — Cuộc Gọi Chốt Lịch Hẹn · Pax Clinic</title>
 <style>
 :root {
   --blue: #1D5FAD; --blue-light: #E6F1FB; --blue-mid: #B5D4F4;
@@ -140,7 +138,6 @@ body { background: #F0EFE9; color: var(--text); padding: 0 0 40px; min-height: 1
 <body>
 
 <div class="header">
-  <h1>QA Grid — Cuộc Gọi Chốt Lịch Hẹn</h1>
   <p>Pax Clinic · Mục tiêu: Chốt lịch khám</p>
   <div class="score-bar">
     <div class="score-pill">Tổng <span class="score-num amber" id="total-score">0%</span></div>
@@ -195,10 +192,11 @@ body { background: #F0EFE9; color: var(--text); padding: 0 0 40px; min-height: 1
       <div class="guide-col">
         <h4>☑ Cách dùng checklist</h4>
         <ul>
+          <li>Phần 1 COI là quan trọng</li>
           <li>Tick trước mỗi cuộc gọi để nhắc nhở</li>
           <li>Sau call: supervisor review những gì đạt</li>
-          <li>Phần 1 là quan trọng</li>
-          <li>🔴 Điểm khó — cần chú ý đặc biệt</li>
+          
+          <li>🔴 Quan trọng </li>
         </ul>
       </div>
     </div>
@@ -247,7 +245,7 @@ body { background: #F0EFE9; color: var(--text); padding: 0 0 40px; min-height: 1
       <button class="criteria-toggle" onclick="toggleCriteria('c12')">
         <div class="cri-left">
           <div class="cri-num">1.2</div>
-          <div class="cri-name">Khám phá & Kết nối <span class="hard-badge">🔴 Khó nhất</span></div>
+          <div class="cri-name">Khám phá & Kết nối <span class="hard-badge">🔴 Khó </span></div>
           <div class="cri-sub">Hỏi đúng để hiểu vấn đề nhanh</div>
         </div>
         <span class="cri-chevron" id="c12-chev">▾</span>
@@ -261,7 +259,7 @@ body { background: #F0EFE9; color: var(--text); padding: 0 0 40px; min-height: 1
           <div class="detail-label">Checklist</div>
           <div class="checklist" data-section="1">
             <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="hard-dot">🔴</span><span class="check-label">Hỏi câu mở: "Bạn đang gặp khó khăn gì khiến bạn quan tâm đến sức khoẻ tâm lý vậy?"</span></div>
-            <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="hard-dot">🔴</span><span class="check-label">Lắng nghe trọn vẹn — KHÔNG ngắt lời hoặc vội vàng đưa ra giải pháp</span></div>
+            <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="hard-dot">🔴</span><span class="check-label">Lắng nghe trọn vẹn — Không vội vàng đưa ra giải pháp</span></div>
             <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Xác nhận đã hiểu: "Mình hiểu rồi, vậy bạn đang..." (tóm tắt lại ngắn gọn)</span></div>
             <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Hỏi thêm: "Tình trạng này đã kéo dài bao lâu rồi ạ?"</span></div>
             <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Hỏi ảnh hưởng: "Điều này có ảnh hưởng đến công việc / giấc ngủ / các mối quan hệ không?"</span></div>
@@ -274,7 +272,7 @@ body { background: #F0EFE9; color: var(--text); padding: 0 0 40px; min-height: 1
       <button class="criteria-toggle" onclick="toggleCriteria('c13')">
         <div class="cri-left">
           <div class="cri-num">1.3</div>
-          <div class="cri-name">Tạo nhận thức & Hook <span class="hard-badge">🔴 Khó nhất</span></div>
+          <div class="cri-name">Tạo nhận thức & Hook <span class="hard-badge">🔴 Khó  </span></div>
           <div class="cri-sub">Lý do khách PHẢI đến khám</div>
         </div>
         <span class="cri-chevron" id="c13-chev">▾</span>
@@ -282,7 +280,7 @@ body { background: #F0EFE9; color: var(--text); padding: 0 0 40px; min-height: 1
       <div class="criteria-detail" id="c13">
         <div class="detail-section">
           <div class="detail-label">Kỳ vọng</div>
-          <div class="detail-text">Dùng thông tin khách vừa chia sẻ để nói: "Với những gì bạn mô tả, đây là điều tôi muốn đánh giá kỹ hơn cho bạn..." — tạo cảm giác cần thiết và cá nhân hoá, không phán xét.</div>
+          <div class="detail-text">Dùng thông tin khách vừa chia sẻ để nói: "Với những gì bạn mô tả, đây là điều tôi muốn đánh giá kỹ hơn cho bạn bằng phương pháp X..." — tạo cảm giác cần thiết và cá nhân hoá, không phán xét.</div>
         </div>
         <div class="detail-section">
           <div class="detail-label">Checklist</div>
@@ -328,7 +326,7 @@ body { background: #F0EFE9; color: var(--text); padding: 0 0 40px; min-height: 1
       <button class="criteria-toggle" onclick="toggleCriteria('c15')">
         <div class="cri-left">
           <div class="cri-num">1.5</div>
-          <div class="cri-name">Chốt lịch hẹn <span class="hard-badge">🔴 Khó nhất</span></div>
+          <div class="cri-name">Chốt lịch hẹn <span class="hard-badge">🔴 Khó </span></div>
           <div class="cri-sub">Kỹ năng sales quan trọng nhất</div>
         </div>
         <span class="cri-chevron" id="c15-chev">▾</span>
@@ -341,7 +339,7 @@ body { background: #F0EFE9; color: var(--text); padding: 0 0 40px; min-height: 1
         <div class="detail-section">
           <div class="detail-label">Checklist</div>
           <div class="checklist" data-section="1">
-            <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="hard-dot">🔴</span><span class="check-label">Chủ động đề xuất lịch: "Bạn có thể đến Pax Clinic vào thứ X hoặc Y tuần này không?"</span></div>
+            <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="hard-dot">🔴</span><span class="check-label">Chủ động đề xuất lịch: "Bác sĩ A đang có lịch trống trong khung giờ X và Y. Bạn có thể đến Pax Clinic vào thứ X hoặc Y tuần này không?"</span></div>
             <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="hard-dot">🔴</span><span class="check-label">Dùng kỹ thuật 2 lựa chọn: "Sáng hay chiều tiện hơn cho bạn?"</span></div>
             <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Xác nhận lịch hẹn rõ ràng: ngày / giờ / địa chỉ</span></div>
             <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="hard-dot">🔴</span><span class="check-label">Nếu khách do dự: không bỏ qua — hỏi lý do và xử lý (xem tiêu chí 1.6)</span></div>
@@ -356,7 +354,7 @@ body { background: #F0EFE9; color: var(--text); padding: 0 0 40px; min-height: 1
       <button class="criteria-toggle" onclick="toggleCriteria('c16')">
         <div class="cri-left">
           <div class="cri-num">1.6</div>
-          <div class="cri-name">Xử lý từ chối & Rào cản <span class="hard-badge">🔴 Khó nhất</span></div>
+          <div class="cri-name">Xử lý từ chối & Rào cản <span class="hard-badge">🔴 Khó </span></div>
           <div class="cri-sub">Không bỏ cuộc quá sớm</div>
         </div>
         <span class="cri-chevron" id="c16-chev">▾</span>
@@ -630,7 +628,7 @@ body { background: #F0EFE9; color: var(--text); padding: 0 0 40px; min-height: 1
   <div class="rejection-header" onclick="toggleRejection()">
     <div>
       <div class="rh-title">🚧 Bảng xử lý từ chối</div>
-      <div class="rh-sub">Dùng khi khách chưa đồng ý đặt lịch — 5 tình huống thường gặp</div>
+      <div class="rh-sub">Dùng khi khách chưa đồng ý đặt lịch — 5 tình huống thường gặp (Bác sĩ có thể thay đổi theo trường hợp và theo phong cách tư vấn của Bác sĩ)</div>
     </div>
     <span class="chevron" id="rej-chev">▾</span>
   </div>
@@ -641,7 +639,7 @@ body { background: #F0EFE9; color: var(--text); padding: 0 0 40px; min-height: 1
         <div class="rej-label">Cách phản hồi</div>
         <div class="rej-text">Không từ bỏ — hỏi thời gian linh hoạt hơn. Đề xuất lịch sớm hoặc cuối tuần.</div>
         <div class="rej-label">Câu nói mẫu</div>
-        <div class="rej-script">"Mình hiểu bạn bận. Pax Clinic có lịch sáng sớm 8h và cuối tuần. Tuần sau bạn có 60 phút rảnh không?"</div>
+        <div class="rej-script">"Hiện tại ngoài khung giờ trong tuần. Pax Clinic có lịch sáng sớm 8h và cuối tuần Thứ 7. Tuần sau bạn có 60 phút rảnh không?"</div>
       </div>
     </div>
     <div class="rejection-item">
@@ -650,7 +648,7 @@ body { background: #F0EFE9; color: var(--text); padding: 0 0 40px; min-height: 1
         <div class="rej-label">Cách phản hồi</div>
         <div class="rej-text">Hỏi thêm để hiểu rào cản thật sự. Đặt lịch tạm và cho phép đổi lịch.</div>
         <div class="rej-label">Câu nói mẫu</div>
-        <div class="rej-script">"Bạn còn băn khoăn điều gì không? Mình có thể đặt lịch tạm, nếu không tiện bạn báo mình đổi được."</div>
+        <div class="rej-script">"Bạn còn băn khoăn điều gì không? Mình có thể đặt lịch tạm, nếu không tiện bạn có thể nhắn lại Page của Pax để báo các bạn đổi lịch lại cho mình."</div>
       </div>
     </div>
     <div class="rejection-item">
@@ -659,7 +657,7 @@ body { background: #F0EFE9; color: var(--text); padding: 0 0 40px; min-height: 1
         <div class="rej-label">Cách phản hồi</div>
         <div class="rej-text">Giải thích cụ thể chi phí. Đề cao giá trị buổi đầu tiên. Không so sánh.</div>
         <div class="rej-label">Câu nói mẫu</div>
-        <div class="rej-script">"Buổi đầu tiên là [giá] và bao gồm đánh giá toàn diện. Đây là bước quan trọng để hiểu đúng bạn cần gì."</div>
+        <div class="rej-script">"Buổi đầu tiên là [giá] và bao gồm đánh giá các bước X, Y, Z. Đây là bước quan trọng để hiểu đúng bạn cần gì."</div>
       </div>
     </div>
     <div class="rejection-item">
@@ -687,8 +685,8 @@ body { background: #F0EFE9; color: var(--text); padding: 0 0 40px; min-height: 1
 <div class="hard-wrap">
   <div class="hard-header" onclick="toggleHard()">
     <div>
-      <div class="hh-title">⚠️ Phân tích điểm khó nhất — Bác sĩ cần chú ý đặc biệt</div>
-      <div class="hh-sub">4 điểm khó trong thực tế + cách khắc phục cụ thể</div>
+      <div class="hh-title">⚠️ Phân tích điểm Bác sĩ cần chú ý t</div>
+      <div class="hh-sub">4 điểm khó trong thực tế + gợi ý cách khắc phục (Bác sĩ có thể thay đổi theo trường hợp và theo phong cách tư vấn của Bác sĩ)</div>
     </div>
     <span class="chevron" id="hard-chev">▾</span>
   </div>
@@ -696,10 +694,10 @@ body { background: #F0EFE9; color: var(--text); padding: 0 0 40px; min-height: 1
     <div class="hard-item">
       <div class="hard-item-title"><span style="background:#FCEBEB;color:#A32D2D;padding:2px 8px;border-radius:20px;font-size:11px">1.3</span> Tạo Hook — Lý do phải đến khám</div>
       <div class="hard-grid">
-        <div><div class="hard-cell-label">Tại sao khó</div><div class="hard-cell-text">Bác sĩ quen tư vấn y khoa — khó tạo urgency mà không phán xét hay chẩn đoán sớm</div></div>
-        <div><div class="hard-cell-label">Biểu hiện thường gặp</div><div class="hard-cell-text">Hay nói quá chung chung: "Bạn nên đến khám" mà không có lý do cụ thể từ vấn đề khách</div></div>
+        <div><div class="hard-cell-label">Tại sao khó</div><div class="hard-cell-text">Bác sĩ quen tư vấn y khoa — không tạo hook/ cảm giác để khách hàng thấy việc đến phòng khám là cấp bách </div></div>
+        <div><div class="hard-cell-label">Biểu hiện thường gặp</div><div class="hard-cell-text">Thường nói chung chung: "Bạn nên đến khám" mà không liên hệ đến phương pháp cụ thể/ hay chương trình đặc biệt từ vấn đề khách</div></div>
       </div>
-      <div class="hard-fix"><div class="hard-fix-label">✅ Cách khắc phục</div><div class="hard-fix-text">Dùng chính lời khách nói: "Với [điều X] bạn vừa nói, đây chính xác là điều tôi cần đánh giá kỹ cho bạn"</div></div>
+      <div class="hard-fix"><div class="hard-fix-label">✅ Cách khắc phục</div><div class="hard-fix-text">Dùng chính lời khách nói: "Với [điều X] bạn vừa nói, các Bác sĩ sẽ dành thời gian 45-60 phút để đánh giá kỹ cho bạn"</div></div>
     </div>
     <div class="hard-item">
       <div class="hard-item-title"><span style="background:#FCEBEB;color:#A32D2D;padding:2px 8px;border-radius:20px;font-size:11px">1.5</span> Chốt lịch — Kỹ năng sales</div>
@@ -707,7 +705,7 @@ body { background: #F0EFE9; color: var(--text); padding: 0 0 40px; min-height: 1
         <div><div class="hard-cell-label">Tại sao khó</div><div class="hard-cell-text">Bác sĩ không được đào tạo sales — ngại đề xuất trực tiếp, sợ khách cảm thấy bị ép</div></div>
         <div><div class="hard-cell-label">Biểu hiện thường gặp</div><div class="hard-cell-text">Kết thúc call bằng "bạn suy nghĩ thêm nhé" mà không đề xuất lịch cụ thể — khách lạnh dần</div></div>
       </div>
-      <div class="hard-fix"><div class="hard-fix-label">✅ Cách khắc phục</div><div class="hard-fix-text">Thực hành câu cứng: "Tôi muốn đặt lịch cho bạn ngay. Thứ X hay Y tuần này bạn tiện hơn?"</div></div>
+      <div class="hard-fix"><div class="hard-fix-label">✅ Cách khắc phục</div><div class="hard-fix-text">Thực hành câu cứng: "Bác sĩ A - BS CKII chuyên trgia tâm lý trị liệu về... có lịch trống và thứ X và Y. Thứ X hay Y tuần này bạn tiện hơn?"</div></div>
     </div>
     <div class="hard-item">
       <div class="hard-item-title"><span style="background:#FCEBEB;color:#A32D2D;padding:2px 8px;border-radius:20px;font-size:11px">1.6</span> Xử lý từ chối — Không bỏ cuộc sớm</div>
@@ -718,12 +716,12 @@ body { background: #F0EFE9; color: var(--text); padding: 0 0 40px; min-height: 1
       <div class="hard-fix"><div class="hard-fix-label">✅ Cách khắc phục</div><div class="hard-fix-text">Phân biệt: từ chối thật (khách thật sự không muốn) vs rào cản (có thể tháo gỡ). Luôn hỏi thêm 1 câu</div></div>
     </div>
     <div class="hard-item">
-      <div class="hard-item-title"><span style="background:#FCEBEB;color:#A32D2D;padding:2px 8px;border-radius:20px;font-size:11px">1.2</span> Khám phá — Hỏi đúng, không tư vấn</div>
+      <div class="hard-item-title"><span style="background:#FCEBEB;color:#A32D2D;padding:2px 8px;border-radius:20px;font-size:11px">1.2</span> Discovery — Hỏi đúng, không tư vấn</div>
       <div class="hard-grid">
         <div><div class="hard-cell-label">Tại sao khó</div><div class="hard-cell-text">Bản năng bác sĩ là tư vấn giải pháp ngay — khó dừng ở mức "tìm hiểu" mà không chẩn đoán</div></div>
-        <div><div class="hard-cell-label">Biểu hiện thường gặp</div><div class="hard-cell-text">Hỏi 1 câu rồi bắt đầu giải thích dài — khách không cảm thấy được nghe</div></div>
+        <div><div class="hard-cell-label">Biểu hiện thường gặp</div><div class="hard-cell-text"> Khách hàng hỏi Bác sĩ giải thích chuyên môn - không tạo được sự tò mò từ khách hàng </div></div>
       </div>
-      <div class="hard-fix"><div class="hard-fix-label">✅ Cách khắc phục</div><div class="hard-fix-text">Đặt mục tiêu: trong 3 phút đầu chỉ được hỏi, không được đưa giải pháp. Dùng đồng hồ bấm giờ khi luyện tập</div></div>
+      <div class="hard-fix"><div class="hard-fix-label">✅ Cách khắc phục</div><div class="hard-fix-text">Đặt mục tiêu: trong 3 phút đầu chỉ  hỏi, không  đưa giải pháp.</div></div>
     </div>
   </div>
 </div>
