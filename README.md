@@ -245,7 +245,7 @@ body { background: #F0EFE9; color: var(--text); padding: 0 0 40px; min-height: 1
       <button class="criteria-toggle" onclick="toggleCriteria('c12')">
         <div class="cri-left">
           <div class="cri-num">1.2</div>
-          <div class="cri-name">Khám phá & Kết nối <span class="hard-badge">🔴 Khó </span></div>
+          <div class="cri-name">Đặt câu hỏi & Kết nối <span class="hard-badge">🔴 Khó </span></div>
           <div class="cri-sub">Hỏi đúng để hiểu vấn đề nhanh</div>
         </div>
         <span class="cri-chevron" id="c12-chev">▾</span>
